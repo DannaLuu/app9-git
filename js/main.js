@@ -107,7 +107,7 @@ function showDuration(){
 		}
 		$('#duration').html(m+'.'+s);
 		var value=0;
-		if(audio.currentTime>0){
+		if(audio.currentTime > 0){
 			value =Math.floor((100/audio.duration)*audio.currentTime);
 		}
 		$('#progress').css('width',value+'%');
